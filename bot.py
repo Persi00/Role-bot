@@ -4,7 +4,9 @@ from discord.utils import get
 
 client = commands.Bot(command_prefix='.', intents=discord.Intents.all())
 
-database_file = open("database.json")
+database_file = open("database.json", 'a+')
+if database_file.read() == "":
+    database_file.write('{"user": []}')
 database = json.load(database_file)
 database_file.close()
 
@@ -135,4 +137,4 @@ async def removeRole(ctx, member : discord.Member, role : discord.Role):
         await ctx.send("You haven't permission to give someone role!")
 
         
-client.run('TOKEN')
+client.run('ODA2OTAwMjUyMTkxODgzMzA0.YBwKaw._pyOAW8bM-SpUJDmBJHiY5iJBkM')
