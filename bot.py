@@ -135,4 +135,4 @@ async def removeRole(ctx, member : discord.Member, role : discord.Role):
         await ctx.send("You haven't permission to give someone role!")
 
         
-client.run('ODA2OTAwMjUyMTkxODgzMzA0.YBwKaw.PLBhCbncRj9_JwiQwJRkfFPrToE')
+client.run('TOKEN')
